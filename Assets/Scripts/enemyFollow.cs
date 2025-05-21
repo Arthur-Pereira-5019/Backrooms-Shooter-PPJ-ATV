@@ -6,6 +6,7 @@ public class EnemyFollow : MonoBehaviour {
 	public float moveSpeed = 5f;		// enemy move speed
 	public GameObject target;
 	private Transform targetPos;
+	public float maxDistance;
 
 	void Awake() {
 		if(target == null) {
@@ -16,7 +17,7 @@ public class EnemyFollow : MonoBehaviour {
 	}
 	
 	void EnemyMovement() {
-		if(Vector3.Distance(transform.position, targetPos.position) > 0.1 && Vector3.Distance(transform.position, targetPos.position) < 10) {
+		if(Vector3.Distance(transform.position, targetPos.position) > 0.1 && Vector3.Distance(transform.position, targetPos.position) < maxDistance) {
 			transform.position = Vector3.MoveTowards(transform.position, targetPos.position, moveSpeed * Time.deltaTime);
 		}
 		
