@@ -18,7 +18,7 @@ public class EnemyFollow : MonoBehaviour {
 	
 	void EnemyMovement() {
 		if(Vector3.Distance(transform.position, targetPos.position) > 0.1 && Vector3.Distance(transform.position, targetPos.position) < maxDistance) {
-			transform.position = Vector3.MoveTowards(transform.position, targetPos.position, moveSpeed * Time.deltaTime);
+			gameObject.transform.position = Vector3.MoveTowards(transform.position, targetPos.position, moveSpeed * Time.deltaTime);
 		}
 		
 	}

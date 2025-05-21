@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject nextLevelButtons;
 	public string nextLevelToLoad;
 
-	private float currentTime;
+	public float currentTime;
 
 	// setup the game
 	void Start () {

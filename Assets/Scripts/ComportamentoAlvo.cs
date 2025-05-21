@@ -21,22 +21,30 @@ public class ComportamentoAlvo : MonoBehaviour
 		}
 
 		// Se foi atingido por um projétil...
-		if (newCollision.gameObject.tag == "Projectile") {
-			if (prefabExplosao) {
+		if (newCollision.gameObject.tag == "Projectile")
+		{
+			if (prefabExplosao)
+			{
 				// Instancia a explosão na posição e rotação do alvo
-				Instantiate (prefabExplosao, transform.position, transform.rotation);
+				Instantiate(prefabExplosao, transform.position, transform.rotation);
 			}
 
 			// se o game manager existir, altere o tempo e placar conforme o alvo
-			if (GameManager.gm) {
-				GameManager.gm.targetHit (pontuacao, tempoExtra);
+			if (GameManager.gm)
+			{
+				GameManager.gm.targetHit(pontuacao, tempoExtra);
 			}
-				
+
 			// destrua o projétil
-			Destroy (newCollision.gameObject);
-				
+			Destroy(newCollision.gameObject);
+
 			// autodestrua-se
-			Destroy (gameObject);
+			Destroy(gameObject);
+		}
+		else if (newCollision.gameObject.tag == "Player")
+		{
+			Destroy(gameObject);
+			GameManager.gm.currentTime = 0.1f;
 		}
 	}
 }
