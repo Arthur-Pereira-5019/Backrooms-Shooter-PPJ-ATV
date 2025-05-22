@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6146554025305659666}
   - component: {fileID: 3791009941299113512}
   m_Layer: 0
-  m_Name: Spawner1
+  m_Name: SpawnerScene2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,9 +52,9 @@ MonoBehaviour:
   zMinRange: -3
   zMaxRange: 3
   spawnObjects:
-  - {fileID: 7781406890782777440, guid: a2617285dd68944b6a32503738f511f8, type: 3}
-  - {fileID: 0}
-  - {fileID: 6293710976804089652, guid: dcb60b8e429db49fcb8d6b0bb2cfe8f0, type: 3}
-  - {fileID: 2889692173246107289, guid: 6d5a5ad794bac4a4d99cbb2dea21bbe1, type: 3}
-  - {fileID: 7781406890782777440, guid: a2617285dd68944b6a32503738f511f8, type: 3}
-  - {fileID: 2889692173246107289, guid: 6d5a5ad794bac4a4d99cbb2dea21bbe1, type: 3}
+  - {fileID: 3666577330621172667, guid: 5f729e6cf50dbc54a9f55c7e4d3abae6, type: 3}
+  - {fileID: 3666577330621172667, guid: 5f729e6cf50dbc54a9f55c7e4d3abae6, type: 3}
+  - {fileID: 3666577330621172667, guid: 5f729e6cf50dbc54a9f55c7e4d3abae6, type: 3}
+  - {fileID: 7739815538823564845, guid: 8d2218710ed0cb845b7118f8e02e4392, type: 3}
+  - {fileID: 7739815538823564845, guid: 8d2218710ed0cb845b7118f8e02e4392, type: 3}
+  - {fileID: 7739815538823564845, guid: 8d2218710ed0cb845b7118f8e02e4392, type: 3}

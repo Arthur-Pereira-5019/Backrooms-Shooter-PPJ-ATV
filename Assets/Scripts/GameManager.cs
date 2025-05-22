@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour {
 	// make game manager public static so can access this from other scripts
 	public static GameManager gm;
 
+	public GameObject player;
+
 	// public variables
-	public int score=0;
+	public int score = 0;
 
 	public bool canBeatLevel = false;
 	public int beatLevelScore=0;
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour {
 
 	// setup the game
 	void Start () {
+		player = GameObject.FindWithTag("Player");
 
 		// set the current time to the startTime specified
 		currentTime = startTime;
@@ -62,13 +65,18 @@ public class GameManager : MonoBehaviour {
 	// this is the main game event loop
 	void Update () {
 		if (!gameIsOver) {
-			if (canBeatLevel && (score >= beatLevelScore)) {  // check to see if beat game
-				BeatLevel ();
-			} else if (currentTime < 0) { // check to see if timer has run out
-				EndGame ();
-			} else { // game playing state, so update the timer
+			if (canBeatLevel && (score >= beatLevelScore))
+			{  // check to see if beat game
+				BeatLevel();
+			}
+			else if (currentTime < 0)
+			{ // check to see if timer has run out
+				EndGame();
+			}
+			else
+			{ // game playing state, so update the timer
 				currentTime -= Time.deltaTime;
-				mainTimerDisplay.text = currentTime.ToString ("0.00");				
+				mainTimerDisplay.text = currentTime.ToString("0.00");
 			}
 		}
 	}
@@ -81,8 +89,9 @@ public class GameManager : MonoBehaviour {
 		mainTimerDisplay.text = "GAME OVER";
 
 		// activate the gameOverScoreOutline gameObject, if it is set 
+
 		if (gameOverScoreOutline)
-			gameOverScoreOutline.SetActive (true);
+			gameOverScoreOutline.SetActive(true);
 	
 		// activate the playAgainButtons gameObject, if it is set 
 		if (playAgainButtons)
@@ -95,6 +104,7 @@ public class GameManager : MonoBehaviour {
 	
 	void BeatLevel() {
 		// game is over
+		
 		gameIsOver = true;
 
 		// repurpose the timer to display a message to the player

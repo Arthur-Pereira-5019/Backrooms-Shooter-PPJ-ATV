@@ -44,7 +44,7 @@ public class ComportamentoAlvo : MonoBehaviour
 		else if (newCollision.gameObject.tag == "Player")
 		{
 			Destroy(gameObject);
-			GameManager.gm.currentTime = 0.1f;
+			GameManager.gm.currentTime = 0f;
 		}
 	}
 }
