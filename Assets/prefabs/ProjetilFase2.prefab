@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -8853887108099280353}
   - component: {fileID: -7919220452750379960}
   m_Layer: 0
-  m_Name: Projectile
+  m_Name: ProjetilFase2
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 416e9e705dcea5743963ef0897c1b12d, type: 2}
+  - {fileID: 2100000, guid: b7dca7f51d68740b997b53ad9466c489, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -195,7 +195,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 0.99093604, b: 0.6698113, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}

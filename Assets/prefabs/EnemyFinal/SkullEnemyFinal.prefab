@@ -438,8 +438,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1356922425044365599}
   - component: {fileID: 4368510728593896544}
-  - component: {fileID: 845674534359033827}
   - component: {fileID: 1443044467641368280}
+  - component: {fileID: 7966299296060988871}
   m_Layer: 0
   m_Name: SkullEnemyFinal
   m_TagString: Untagged
@@ -475,24 +475,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f32337bc8e5d243a3e1904f953d978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 11
+  moveSpeed: 12
   target: {fileID: 0}
-  maxDistance: 18
---- !u!114 &845674534359033827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3666577330621172667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20a926d2dbaf347e29cb9c7dc7bf85da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pontuacao: 7
-  tempoExtra: 5
-  prefabExplosao: {fileID: 0}
+  maxDistance: 24
 --- !u!54 &1443044467641368280
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -501,7 +486,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3666577330621172667}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 6
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -520,6 +505,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7966299296060988871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666577330621172667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52132f2fdca7863459fdd583b3122f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontuacao: 7
+  tempoExtra: 5
+  prefabExplosao: {fileID: 0}
 --- !u!1 &3802836246846372344
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,5 @@
+# 3D Backrooms Shooter Game
+
+This repository is for the 3D Shooter activity for my "Programming for Games" discipline in my IT course, we were tasked to create a level 2 for the game that the teacher created with us in class, so we could still use his assets and scripts, but we would have to be somewhat creative.
+
+My idea was to create a game that you could move freely in a Backrooms themed map and your enemies would be nextbots-like enemies of a skull and a ghost. Didn't did too much creative stuff for the scripts as I adapted some from older projects and also had to face a lot of bugs due to Unity's shadering system and some broken scripts that I reused from the discipline past projects. So yes, it's my worst project (I had to submit and present it with some very bad bugs) but I got a good grade on it for my creativity.

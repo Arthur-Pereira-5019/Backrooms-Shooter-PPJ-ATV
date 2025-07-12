@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf81ce52bea74e6bb1edf7dd3f6fc21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projetil: {fileID: 4380848040487283435, guid: e5fcb51f8e4520a4a89bb8d53d20f517, type: 3}
+  projetil: {fileID: 4380848040487283435, guid: 18cb9cb3f162f104295258b947189640, type: 3}
   forca: 40
   shootSFX: {fileID: 0}
 --- !u!82 &6192988365344739727

@@ -152,6 +152,7 @@ public class GameManager : MonoBehaviour {
 	// public function that can be called to go to the next level of the game
 	public void NextLevel ()
 	{
+		Debug.Log("Novo nível");
 		// we are just loading the specified next level (scene)
 		Application.LoadLevel (nextLevelToLoad);
 	}
